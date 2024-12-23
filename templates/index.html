@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Score Predictor</title>
+</head>
+<body>
+    <h1>Math Score Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
+
+        <label for="race_ethnicity">Race/Ethnicity:</label>
+        <select name="race_ethnicity" id="race_ethnicity" required>
+            <option value="group A">Group A</option>
+            <option value="group B">Group B</option>
+            <option value="group C">Group C</option>
+            <option value="group D">Group D</option>
+            <option value="group E">Group E</option>
+        </select>
+        <br><br>
+
+        <label for="parental_education">Parental Level of Education:</label>
+        <select name="parental_education" id="parental_education" required>
+            <option value="high school">High School</option>
+            <option value="associate's degree">Associate's Degree</option>
+            <option value="bachelor's degree">Bachelor's Degree</option>
+            <option value="master's degree">Master's Degree</option>
+            <option value="some college">Some College</option>
+        </select>
+        <br><br>
+
+        <label for="lunch">Lunch:</label>
+        <select name="lunch" id="lunch" required>
+            <option value="standard">Standard</option>
+            <option value="free/reduced">Free/Reduced</option>
+        </select>
+        <br><br>
+
+        <label for="test_prep">Test Preparation Course:</label>
+        <select name="test_prep" id="test_prep" required>
+            <option value="none">None</option>
+            <option value="completed">Completed</option>
+        </select>
+        <br><br>
+
+        <label for="reading_score">Reading Score:</label>
+        <input type="number" id="reading_score" name="reading_score" required>
+        <br><br>
+
+        <label for="writing_score">Writing Score:</label>
+        <input type="number" id="writing_score" name="writing_score" required>
+        <br><br>
+
+        <button type="submit">Predict Math Score</button>
+    </form>
+</body>
+</html>
